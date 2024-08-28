@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+    <title>Encriptador de Texto</title>
+  </head>
+  <body>
+    <main>
+      <div class="contenido">
+        <div>
+          <label for="text">Ingresa el texto en la caja de abajo</label>
+          <textarea id="text" name="text" rows="5" cols="33">
+              Encripta aquí tu texto
+          </textarea>
+        </div>
+        <div>
+          <button class="btn encrypt" id="encrypt">Encriptar</button>
+          <button class="btn decrypt" id="decrypt">Desencriptar</button>
+        </div>
+      </div>
+      <aside class="resultado-obtenido">
+        <div id="empty-result">
+          <img src="Muñeco.png" alt="" />
+          <strong class="accent-text">Ningun mensaje fue encontrado</strong>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <p id="text-result"></p>
+        <button class="btn hidden" id="copy-button">Copiar</button>
+      </aside>
+    </main>
+  </body>
+</html>
